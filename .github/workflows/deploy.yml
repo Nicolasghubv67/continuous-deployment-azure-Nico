@@ -50,7 +50,7 @@ jobs:
             --image ${{ secrets.DOCKERHUB_USERNAME }}/posts:latest \
             --registry-login-server index.docker.io \
             --registry-username ${{ secrets.DOCKERHUB_USERNAME }} \
-            --registry-password ${{ secrets.DOCKERHUB_READ_TOKEN }} \
+            --registry-password ${{ secrets.DOCKERHUB_TOKEN }} \
             --dns-name-label posts-${{ secrets.DOCKERHUB_USERNAME }} \
             --ports 8080 \
             --os-type Linux \
